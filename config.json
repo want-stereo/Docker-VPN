@@ -3,12 +3,17 @@
     "port": 8080,
     "protocol": "vless",
     "settings": {
-      "decryption": "none",
-      "clients": [{"id": "${UUID}", "flow": "xtls-rprx-vision"}]
+      "clients": [{
+        "id": "${UUID}",
+        "flow": ""
+      }],
+      "decryption": "none"
     },
     "streamSettings": {
       "network": "ws",
-      "wsSettings": {"path": "${WSPATH}"}
+      "wsSettings": {
+        "path": "${WSPATH}"
+      }
     }
   }],
   "outbounds": [{"protocol": "freedom"}]
